@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento 04</title>
+
+    <script>
+       function estructuraCondicional() {
+            let edad = prompt("¿Cuántos años tienes?");
+            if (edad >= 18) {
+                alert("Eres mayor de edad.");
+            } else {
+                alert("Eres menor de edad.");
+            }
+        }
+
+        function operacionesConSwitch() {
+            let dia = prompt("Introduce un número del 1 al 7 para el día de la semana:");
+            switch (dia) {
+                case '1':
+                    alert("Lunes");
+                    break;
+                case '2':
+                    alert("Martes");
+                    break;
+                case '3':
+                    alert("Miércoles");
+                    break;
+                case '4':
+                    alert("Jueves");
+                    break;
+                case '5':
+                    alert("Viernes");
+                    break;
+                case '6':
+                    alert("Sábado");
+                    break;
+                case '7':
+                    alert("Domingo");
+                    break;
+                default:
+                    alert("Número no válido. Debe ser del 1 al 7.");
+            }
+        }
+
+        function operacionesConIfElse() {
+            let numero = prompt("Introduce un número:");
+            if (numero > 0) {
+                alert("El número es positivo.");
+            } else if (numero < 0) {
+                alert("El número es negativo.");
+            } else {
+                alert("El número es cero.");
+            }
+        }
+
+        function operacionesConFor() {
+            let suma = 0;
+            for (let i = 1; i <= 10; i++) {
+                suma += i;
+            }
+            alert("La suma de los números del 1 al 10 es: " + suma);
+        }
+
+        function operacionesConForIn() {
+            let objeto = {a: 1, b: 2, c: 3};
+            let resultado = "";
+            for (let clave in objeto) {
+                resultado += clave + ": " + objeto[clave] + "\n";
+            }
+            alert("Contenido del objeto:\n" + resultado);
+        }
+
+        function operacionesConWhile() {
+            let contador = 0;
+            let resultado = 0;
+            while (contador < 5) {
+                resultado += contador;
+                contador++;
+            }
+            alert("La suma de los primeros 5 números es: " + resultado);
+        }
+        function operacionesConDoWhile() {
+            let contador = 0;
+            let resultado = 0;
+            do {
+                resultado += contador;
+                contador++;
+            } while (contador < 5);
+            alert("La suma de los primeros 5 números es: " + resultado);
+        }
+
+    </script>
+
+    </head>
+
+<body>
+    <h1>Documento 04</h1>
+
+    <button onclick="estructuraCondicional()">Click para ver operaciones con condicionales</button>
+    <button onclick="operacionesConSwitch()">Click para ver operaciones con switch</button>
+    <button onclick="operacionesConIfElse()">Click para ver operaciones con if-else</button>
+    <button onclick="operacionesConFor()">Click para ver operaciones con for</button>
+    <button onclick="operacionesConForIn()">Click para ver operaciones con for-in</button>
+    <button onclick="operacionesConWhile()">Click para ver operaciones con while</button>
+    <button onclick="operacionesConDoWhile()">Click para ver operaciones con do-while</button>
+    
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento 01</title>
+
+    <script>
+
+        function showAlert() {
+            alert("Hello, this is a JavaScript alert!");
+        }
+
+        function showConsoleMessage() {
+            console.log("Hello, this is a message in the console!");
+        }
+
+        let nombreDeAlumno = "Juanito Perez";
+
+        function declararVariables(){
+            let edadDeAlumno = 25;
+        }
+
+        function mostrarDatos(){
+            //let edadDeAlumno = 25;
+            //let nombreDeAlumno = "Juanito Perez";
+            let sexoDelAlumno= true;
+           
+           let objeto = {
+                edad: 25,
+                nombre: "Juanito Perez",
+                sexo: true
+            };
+            
+            console.log("tipo de dato de edad: " + typeof(edadDeAlumno));
+            console.log("tipo de dato de nombre: " + typeof(nombreDeAlumno));
+            console.log("tipo de dato de sexo: " + typeof(sexoDelAlumno));
+            console.log("tipo de dato de objeto: " + typeof(objeto));
+            console.log("tipo de dato de objeto: " + objeto);
+            console.log("tipo de dato de function: " + typeof(showAlert));
+        }
+
+    </script>
+
+    </head>
+
+<body>
+    <h1>Documento 01</h1>
+
+    <button onclick="showAlert()">Click para un alert</button>
+
+    <button onclick="showConsoleMessage()">Click para un mensaje ne la consola</button>
+
+    <button onclick="mostrarDatos()">Click para mostrar datos</button>
+
+
+</body>
+</html>

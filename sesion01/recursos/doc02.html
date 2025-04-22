@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento 01</title>
+
+    <script>
+        function operacionesAritmeticas(){
+            let num1 = 13;
+            let num2 = 5;
+            let suma = num1 + num2;
+            let resta = num1 - num2;
+            let multiplicacion = num1 * num2;
+            let division = num1 / num2;
+            let modulo = num1 % num2;
+            let potencia = num1 ** num2;
+
+            alert("Suma: " + suma + "\n" +
+                  "Resta: " + resta + "\n" +
+                  "Multiplicación: " + multiplicacion + "\n" +
+                  "División: " + division+ "\n" +
+                  "Módulo: " + modulo + "\n" +
+                  "Potencia: " + potencia + "\n");
+
+        }
+
+        function operacionesLogicas(){
+            let a = true;
+            let b = false;
+            let c = true;
+
+            let and = a && b; // false
+            let or = a || b; // true
+            let notA = !a; // false
+            let notB = !b; // true
+
+            alert("AND: " + and + "\n" +
+                  "OR: " + or + "\n" +
+                  "NOT A: " + notA + "\n" +
+                  "NOT B: " + notB + "\n");
+        }
+
+    </script>
+
+    </head>
+
+<body>
+    <h1>Documento 02</h1>
+
+    <button onclick="operacionesAritmeticas()">Click para ver operaciones aritmeticas</button>
+    <button onclick="operacionesLogicas()">Click para ver operaciones logicas</button>
+
+
+</body>
+</html>

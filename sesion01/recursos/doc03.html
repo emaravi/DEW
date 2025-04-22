@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento 03</title>
+
+    <script>
+        function operacionesConEval(){
+            let num1 = 13;
+            let num2 = 5;
+            //let suma = eval(num1 + "+" + num2);
+            let suma = eval ("23+6" );
+            let resta = eval(num1 + "-" + num2);
+            let multiplicacion = eval(num1 + "*" + num2);
+            let division = eval(num1 + "/" + num2);
+            let modulo = eval(num1 + "%" + num2);
+            let potencia = eval(num1 + "**" + num2);
+
+            alert("Suma: " + suma + "\n" +
+                  "Resta: " + resta + "\n" +
+                  "Multiplicación: " + multiplicacion + "\n" +
+                  "División: " + division+ "\n" +
+                  "Módulo: " + modulo + "\n" +
+                  "Potencia: " + potencia + "\n");
+
+        }
+
+        function operacionesConParseInt(){
+            let num1 = "13";
+            let num2 = "5";
+            let suma = parseInt(num1) + parseInt(num2);
+            let resta = parseInt(num1) - parseInt(num2);
+            let multiplicacion = parseInt(num1) * parseInt(num2);
+            let division = parseInt(num1) / parseInt(num2);
+            let modulo = parseInt(num1) % parseInt(num2);
+            let potencia = Math.pow(parseInt(num1),parseInt(num2));
+
+            alert("Suma: " + suma + "\n" +
+                  "Resta: " + resta + "\n" +
+                  "Multiplicación: " + multiplicacion + "\n" +
+                  "División: " + division+ "\n" +
+                  "Módulo: " + modulo + "\n" +
+                  "Potencia: " + potencia + "\n");
+
+        }
+
+        function operacionesConParseFloat(){
+            let num1 = "13.5";
+            let num2 = "5.2";
+            let suma = parseFloat(num1) + parseFloat(num2);
+            let resta = parseFloat(num1) - parseFloat(num2);
+            let multiplicacion = parseFloat(num1) * parseFloat(num2);
+            let division = parseFloat(num1) / parseFloat(num2);
+            let modulo = parseFloat(num1) % parseFloat(num2);
+            let potencia = Math.pow(parseFloat(num1),parseFloat(num2));
+
+            alert("Suma: " + suma + "\n" +
+                  "Resta: " + resta + "\n" +
+                  "Multiplicación: " + multiplicacion + "\n" +
+                  "División: " + division+ "\n" +
+                  "Módulo: " + modulo + "\n" +
+                  "Potencia: " + potencia + "\n");
+
+        }
+       
+    </script>
+
+    </head>
+
+<body>
+    <h1>Documento 03</h1>
+
+    <button onclick="operacionesConEval()">Click para ver operaciones con eval</button>
+    <button onclick="operacionesConParseInt()">Click para ver operaciones con parseInt</button>
+    <button onclick="operacionesConParseFloat()">Click para ver operaciones con parseFloat</button>
+    
+
+</body>
+</html>
