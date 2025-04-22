@@ -1,0 +1,6 @@
+Desarrollar un script que permita ingresar una fecha y calcular si esa fecha es año bisiesto.
+Desarrollar un script que permita verificar si un numero ingresado es primo.
+Desarrollar un script que muestre una palabra ingresada pero escrita al reves:  si  la palabra es amor  el resultado será roma
+Desarrollar un script que muestre cuantos dias faltan para tu cumpleaños, para esto se deber ingresar tu fecha de cumpleaños.
+
+Subir los ejercicio a un repositorio  y enviar el link
