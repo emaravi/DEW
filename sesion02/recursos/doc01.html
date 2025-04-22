@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento 01</title>
 
-    <script>
-
-    </script>
+    <script type="text/javascript" src="js/operaciones.js"></script>
 
     </head>
 
 <body>
     <h1>Documento 01</h1>
+    Ingrese el primer valor a sumar: <input type="number" id="txtValor1"><br>
+    Ingrese el segundo valor a sumar: <input type="number" id="txtValor2"><br>
 
-    <button onclick="">Click para ver</button>
+    <button onclick="sumar(document.getElementById('txtValor1').value,
+                            document.getElementById('txtValor2').value,
+                            document.getElementById('txtResultado'))">Click para ver la suma</button>
 
-
+    <input type="text" id="txtResultado" readonly><br>
 
 </body>
 </html>
