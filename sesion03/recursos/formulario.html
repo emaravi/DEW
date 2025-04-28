@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Web</title>
+    <link rel="stylesheet" href="css/micss.css">
+    <script src="js/mijs.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a los Formularios web</h1>
+    </header>
+    <main>
+        <section id="content">
+            <p>ingresa tus datos.</p>
+        </section>
+    </main>
+    <aside>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </aside>
+
+    <section id="formulario">
+        <h2>Formulario de contacto</h2>
+        <form action="contacto.html" onsubmit="validarDatosDelFormulario()" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required minlength="2" 
+                    maxlength="50" onblur="validarNombre();efectoDesenfoque(this)" onfocus="efectoEnfoque(this)">
+            <br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required min="1" max="120"
+                    onblur="efectoDesenfoque(this)" onfocus="efectoEnfoque(this)">
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <br>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <br>
+            <Label for="fechaNacimiento">Fecha de nacimiento:</Label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            <br>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="sexo" value="femenino" required>
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="otro" name="sexo" value="otro" required>
+            <label for="otro">Otro</label>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto" required onchange="validarAsunto()">
+                <option value="">Seleccione un asunto</option>
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="reclamo">Reclamo</option>
+                <option value="otro">Otro</option>
+            </select>
+            <p id="asuntoMensaje" style="color: red;">Por favor, seleccione un asunto.</p>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+            <br>
+            <label for="terminos">Acepto los términos y condiciones</label>
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+            <input type="button" value="Cancelar" onclick="location.href='index.html'">
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Desarrollo de entornos web</p>
+    </footer>
+    <script>
+        // demostracion de la carga de la pagina
+        console.log("La pagina cargo correctamente!");
+        document.getElementById('content').innerHTML += '<p>Este contenido fue agregado mediante javascript.</p>';
+    </script>
+</body>
+</html>
