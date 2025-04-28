@@ -1,0 +1,4 @@
+desarrollar un formulario de contacto: nombre, apellido, correo, telefono y
+curso al que desea matriularse (html 5, css3, js), al seleccionar un curso deberá aparecer el precio al costado (html 5=100, css3=150, js=200)
+
+Valide todos los campos anteriores.
