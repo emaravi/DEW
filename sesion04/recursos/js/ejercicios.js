@@ -1,14 +1,18 @@
 //jercicios de arreglos con javascript
 //Ejercicio 1
 //Crear un arreglo con 10 números enteros y mostrar la suma de todos los elementos del arreglo.
-let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];  
-let suma = 0;
-for (let i = 0; i < numeros.length; i++) {
-    suma += numeros[i];
-}   
-console.log("La suma de los elementos del arreglo es: " + suma);
+function ejercicio01(){
+    let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];  
+    let suma = 0;
+    for (let i = 0; i < numeros.length; i++) {
+        suma += numeros[i];
+    }   
+    console.log("La suma de los elementos del arreglo es: " + suma);
+}
+
 //Ejercicio 2   
 //Crear un arreglo con 10 números enteros y mostrar el número mayor del arreglo.
+function ejercicio02(){
 let numeros2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let mayor = numeros2[0];    
 for (let i = 1; i < numeros2.length; i++) {
@@ -17,6 +21,8 @@ for (let i = 1; i < numeros2.length; i++) {
     }
 }
 console.log("El número mayor del arreglo es: " + mayor);
+
+}
 //Ejercicio 3
 //Crear un arreglo con 10 números enteros y mostrar el número menor del arreglo.
 
