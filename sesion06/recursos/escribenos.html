@@ -37,6 +37,9 @@
                 <a class="nav-link" href="escribenos.html">Escribenos</a>
               </li>
             </ul>
+            <button type="button" class="btn btn-primary">
+                Mensajes <span class="badge bg-danger">4</span>
+              </button>
             <form class="d-flex">
               <input class="form-control me-2" type="text" placeholder="Buscar">
               <button class="btn btn-primary" type="button">Buscar</button>
@@ -47,12 +50,31 @@
 
     <div class="row">
         <div class="col-sm-4">
-          <h3>Nosotros </h3>
-          
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="images/avatar.png" alt="la foto" width="200" height="250"  style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Juan Perez</h4>
+                  <p class="card-text">quien es juan??</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Ver detalles
+                  </button>
+                </div>
+              </div>
         </div>
 
         <div class="col-sm-4">
-          <h3>Ubicanos</h3>
+            <h3>Mas datos de empleados</h3>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+              Ver Datos Extra
+            </button>
+            <h3>Mas datos de CLientes</h3>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo2">
+            Ver Datos Extra
+          </button>
+          <h3>Mas datos de Mascotas</h3>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo3">
+            Ver Datos Extra
+          </button>
           
         </div>
 
@@ -62,8 +84,72 @@
         </div>
       </div>
 
-
+      <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Datos del Empleado</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur omnis, alias hic architecto nemo recusandae, iure optio mollitia doloremque inventore placeat sunt, nulla modi fugit est. Magnam facere qui quia?
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+  
+      </div>
+    </div> 
+  </div>
     
+  <div class="offcanvas offcanvas-end" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Datos Extra</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ratione est corporis placeat consequatur officia quisquam hic adipisci vitae omnis repudiandae quis commodi aut cum maxime voluptas similique? Voluptatem, omnis..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem quidem nisi et necessitatibus ratione molestias totam earum! Commodi quos recusandae ducimus consequuntur perspiciatis modi eligendi laborum tenetur officiis atque..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum aliquid, repellendus laboriosam sunt adipisci, nisi aperiam alias dignissimos quibusdam nobis repellat nemo similique praesentium dolore temporibus consequuntur blanditiis! Blanditiis!.</p>
+      <button class="btn btn-secondary" type="button">Boton</button>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-start" id="demo2">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Datos Extra</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ratione est corporis placeat consequatur officia quisquam hic adipisci vitae omnis repudiandae quis commodi aut cum maxime voluptas similique? Voluptatem, omnis..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem quidem nisi et necessitatibus ratione molestias totam earum! Commodi quos recusandae ducimus consequuntur perspiciatis modi eligendi laborum tenetur officiis atque..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum aliquid, repellendus laboriosam sunt adipisci, nisi aperiam alias dignissimos quibusdam nobis repellat nemo similique praesentium dolore temporibus consequuntur blanditiis! Blanditiis!.</p>
+      <button class="btn btn-secondary" type="button">Boton</button>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom" id="demo3">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Datos Extra</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ratione est corporis placeat consequatur officia quisquam hic adipisci vitae omnis repudiandae quis commodi aut cum maxime voluptas similique? Voluptatem, omnis..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem quidem nisi et necessitatibus ratione molestias totam earum! Commodi quos recusandae ducimus consequuntur perspiciatis modi eligendi laborum tenetur officiis atque..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum aliquid, repellendus laboriosam sunt adipisci, nisi aperiam alias dignissimos quibusdam nobis repellat nemo similique praesentium dolore temporibus consequuntur blanditiis! Blanditiis!.</p>
+      <button class="btn btn-secondary" type="button">Boton</button>
+    </div>
+  </div>
+
+
+
     <footer class="bg-primary text-white text-center fixed-bottom p-2">
         <p>&copy; 2025 Marca Registrada</p>
     </footer>
